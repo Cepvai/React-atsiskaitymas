@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './Register.css';
+import bcrypt from 'bcryptjs';
+import { useNavigate } from 'react-router-dom';
 
-const Register = () => {
+const Register = ({ onLogin }: { onLogin: (name: string, avatar: string) => void }) => {
   const [formData, setFormData] = useState({
     username: '',
     email: '',
@@ -11,6 +13,8 @@ const Register = () => {
     birthdate: '',
     profilePicture: ''
   });
+
+  const navigate = useNavigate();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -24,8 +28,12 @@ const Register = () => {
     }
 
     try {
-      await axios.post('http://localhost:8080/users', formData);
+      const hashedPassword = await bcrypt.hash(formData.password, 10);
+      const newUser = { ...formData, password: hashedPassword };
+      await axios.post('http://localhost:8080/users', newUser);
       alert('Registracija sėkminga!');
+      onLogin(newUser.username, newUser.profilePicture || 'path/to/default-avatar.png');
+      navigate('/');
     } catch (error) {
       alert('Registracija nepavyko!');
     }
