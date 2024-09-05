@@ -1,4 +1,13 @@
 {
-    "users": []
-  }
-  
+  "users": [
+    {
+      "id": "2eee",
+      "username": "asas",
+      "email": "as@as",
+      "password": "asas",
+      "confirmPassword": "asas",
+      "birthdate": "2024-09-18",
+      "profilePicture": "https://marketplace.canva.com/EAFu7BuRYDI/1/0/1600w/canva-abstract-illustrative-mascot-fishing-club-free-logo-TG9W6g5zVW0.jpg"
+    }
+  ]
+}
