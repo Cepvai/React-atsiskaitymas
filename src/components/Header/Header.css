@@ -7,16 +7,78 @@
     border-bottom: 1px solid #ddd;
   }
   
-  .navigation ul {
+  .header-left {
     display: flex;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    align-items: center;
   }
   
-  .navigation a {
-    text-decoration: none;
+  .logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-links a {
     color: #333;
-    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #333;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .user-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .logout-button {
+    padding: 5px 10px;
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .logout-button:hover {
+    background-color: #c0392b;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .auth-button {
+    padding: 5px 10px;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .auth-button:hover {
+    background-color: #2980b9;
   }

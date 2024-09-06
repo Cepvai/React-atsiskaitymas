@@ -1,0 +1,56 @@
+.add-page {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.add-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add-page input,
+.add-page textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.add-page input:focus,
+.add-page textarea:focus {
+  border-color: #007bff;
+}
+
+.add-page button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-page button:hover {
+  background-color: #0056b3;
+}
+
+.add-page input::placeholder,
+.add-page textarea::placeholder {
+  color: #888;
+  font-style: italic;
+}

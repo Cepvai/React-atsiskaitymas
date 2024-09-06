@@ -1,13 +1,27 @@
 {
   "users": [
     {
-      "id": "2eee",
-      "username": "asas",
-      "email": "as@as",
-      "password": "asas",
+      "id": "08a4",
+      "username": "er",
+      "email": "zz@zz",
+      "password": "$2a$10$xG5EqmaKv3NQ9RJV4BBV/OxiE4YrXFrMlNmHq/DXzZcAqrSVnKuIy",
       "confirmPassword": "asas",
-      "birthdate": "2024-09-18",
-      "profilePicture": "https://marketplace.canva.com/EAFu7BuRYDI/1/0/1600w/canva-abstract-illustrative-mascot-fishing-club-free-logo-TG9W6g5zVW0.jpg"
+      "birthdate": "2024-09-24",
+      "profilePicture": "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
     }
-  ]
+  ],
+  "posts": [
+    {
+      "id": "50ee",
+      "title": "\\sd\\sd",
+      "description": "hthwrh",
+      "image": "https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp",
+      "creator": {
+        "name": "er",
+        "avatar": "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
+      },
+      "createdAt": "2024-09-06T12:10:59.646Z"
+    }
+  ],
+  "saved-posts": []
 }
